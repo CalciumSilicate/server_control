@@ -1,0 +1,104 @@
+PCRC:
+  - cd /home/as/Server/ASFast/PCRC
+  - python3 PCRC.pyz
+  - start
+
+as_bc:
+  - cd /home/as/Server/ASFast/BungeeCord
+  - python3 -m mcdreforged
+
+as_bc_off:
+  - cd /home/as/Server/ASFast/BungeeCord-off
+  - python3 -m mcdreforged
+
+as_cam:
+  - cd /home/as/Server/ASFast/Survive/mirror1
+  - python3 -m mcdreforged
+
+as_cre:
+  - cd /home/as/Server/ASFast/Creative
+  - python3 -m mcdreforged
+
+as_cre2:
+  - cd /home/as/Server/ASFast/Creative2
+  - python3 -m mcdreforged
+
+as_map:
+  - cd /home/as/Server/ASFast/Mapping
+  - python3 -m mcdreforged
+
+as_mirror:
+  - cd /home/as/Server/ASFast/Mirror
+  - python3 -m mcdreforged
+
+as_mirror2:
+  - cd /home/as/Server/ASFast/Mirror2
+  - python3 -m mcdreforged
+
+as_qm:
+  - cd /home/as/Server/ASFast/Survive/mirror
+  - python3 -m mcdreforged
+
+as_sur:
+  - cd /home/as/Server/ASFast/Survive
+  - python3 -m mcdreforged
+
+backup:
+  - cd /home/as/Server/backup
+  - python backup.py
+
+bluemap:
+  - cd /home/as/Server/ASFast/bluemap
+  - java -jar BlueMap-3.12-cli.jar -w
+
+bluemap-R:
+  - cd /home/as/Server/ASFast/bluemap
+  - java -jar BlueMap-3.12-cli.jar -r -v 1.16.5
+
+cal_bot:
+  - source /home/as/cal/calcium_bot/venv/bin/activate
+  - cd /home/as/cal/calcium_bot/calcium_bot
+  - nb run
+
+cal_clash:
+  - clash
+
+cal_nps:
+  - cd /home/as/cal/nps
+  - ./nps
+
+ch_bridge:
+  - cd /home/as/Server/ASFast/ChatBridgev2
+  - python3 ChatBridge.pyz server
+
+ch_cqhttp:
+  - cd /home/as/Server/ASFast/ChatBridgev2
+  - 'while true
+
+    do
+
+    sleep 3
+
+    python3 ChatBridge\ -\ QQ.pyz cqhttp_bot
+
+    done
+
+    '
+
+go_cqhttp:
+  - cd /home/as/cal/calcium_bot/go_cqhttp_1.0.0rc3/
+  - ./go-cqhttp
+
+online_responder:
+  - cd /home/as/Server/ASFast/ChatBridgev2
+  - python3 ChatBridge.pyz online_command
+
+satori_bot:
+  - source /home/as/cal/calcium_bot/venv/bin/activate
+  - cd /home/as/cal/calcium_bot/satori-bot
+  - nb run
+
+satori_cqhttp:
+  - cd /home/as/cal/calcium_bot/go_cqhttp_1.0.0rc3_for_satori/
+  - ./go-cqhttp
+
